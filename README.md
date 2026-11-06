@@ -1,43 +1,43 @@
 # Creator Skills Kit（创作者工具包）
 
-一组可在 Cursor / 兼容 Agent 中使用的创作 Skill，覆盖选题评估、标题优化、长文结构、事实核查、内容复盘，以及多平台分发草稿。
+一组可在 Cursor 等 Agent 环境中使用的创作 Skill：从选题到标题、长文结构、事实核查、发布后复盘，再到多平台分发草稿。
 
-开源的是**工具方法与模板**，不是「懒笔头」会员知识库正文。
+开源的是**方法与模板**，不是懒笔头会员知识库正文。
 
 ## 包含的 Skill
 
-| Skill | 简介 |
-| --- | --- |
-| `creator-topic-evaluator` | 评估公众号、视频或知识内容选题是否值得投入，适用于选题、素材碎片、热点想法，或规划选题库与优先级。 |
-| `creator-title-optimizer` | 为公众号技术、效率和创作类文章生成、诊断和筛选标题；兼顾打开率与技术词准确性。 |
-| `creator-longform-structure` | 将零散观察、访谈、案例或研究材料组织成适合公众号的长文结构与大纲。 |
-| `creator-fact-checker` | 为 AI、工具、平台规则、数据与案例类内容做资料研究和事实核查，建立主张台账。 |
-| `creator-content-review` | 复盘发布后表现，识别可验证的下一轮改进假设，避免凭单篇波动下结论。 |
-| `creator-distribution-kit` | 将已完成文章改写为不同平台的发布草稿，保留观点、事实边界与真实表达。 |
+| Skill | 用途 |
+|-------|------|
+| `creator-topic-evaluator` | 评估选题是否值得投入，并给出现在写 / 补材料 / 暂缓 |
+| `creator-title-optimizer` | 生成、诊断并筛选标题，避免无法兑现的承诺 |
+| `creator-longform-structure` | 把零散材料组织成公众号长文结构与大纲 |
+| `creator-fact-checker` | 建立主张台账，做资料研究与事实核查 |
+| `creator-content-review` | 复盘发布后数据，提出可验证的下一轮实验 |
+| `creator-distribution-kit` | 把成稿改写成多平台发布**草稿**（不代发） |
 
 ## 安装与使用
 
-1. 把 `skills/` 下需要的目录拷到你自己的 Agent skills 目录（或按各环境的 Skill 安装方式放置）。
-2. 打开对应目录中的 `SKILL.md`，按其中的工作流使用；模板在各 Skill 的 `assets/`，细则在 `references/`。
-3. 也可只复制某一个 Skill，不必整包安装。
+1. 将 `skills/` 下需要的目录拷到你的 Agent skills 目录（或按各 `SKILL.md` 的说明引用）。
+2. 在对话里说明要用哪个 Skill，并按其中工作流与 `assets/` 模板执行。
+3. 事实核查与分发类 Skill：**不编造**来源、案例或数据；分发 Skill **不会**替你自动发布。
 
-## 边界（请先读）
+## 边界
 
-- **不代发**：分发类 Skill 只生成草稿与清单，不会代替你在任何平台发布。
-- **不编造事实**：核查与写作流程要求删除、降格或标明不确定内容；不得用虚构引用补空缺。
-- **开源范围**：本仓 MIT 仅覆盖本仓库文件中的工具方法与模板，**不是**懒笔头会员知识库正文。
+- 不代发、不登录你的社交账号发帖。
+- 找不到可靠依据时，应删除、降格表述或标明不确定，而不是补假引用。
+- MIT 许可只覆盖本仓库文件；不覆盖任何付费知识库内容。
 
-更多说明见 [NOTICE.md](./NOTICE.md)。
+## 进阶：懒笔头会员知识库（引流）
 
-## 进阶：懒笔头公众号写作助手 · 会员版（腾讯 IMA）
+若你需要持续维护的作者写作参考库（在腾讯 IMA 中使用），可了解：
 
-若你需要更完整的写作方法、案例与持续更新的会员知识库，可了解：
+**懒笔头 · 公众号写作助手（会员版）**  
+https://ima.qq.com/wiki/?shareId=5ca82565e36f0fd30a6c66aa2349a438e5c2f0328b8ec9b9435298917544ae52
 
-- 链接：https://ima.qq.com/wiki/?shareId=5ca82565e36f0fd30a6c66aa2349a438e5c2f0328b8ec9b9435298917544ae52
-- 宣传海报（扫码订阅）：[`assets/ima-member-poster-with-qr.png`](./assets/ima-member-poster-with-qr.png)
+宣传海报（含订阅二维码）：[`assets/ima-member-poster-with-qr.png`](assets/ima-member-poster-with-qr.png)
 
-**说明**：会员库内容与订阅按腾讯 IMA / 商品条款执行，**不受**本仓 MIT 许可覆盖。
+会员库按腾讯 IMA / 商品条款提供，**不受本仓库 MIT 覆盖**。开源工具包与付费知识库是两件分开的事。
 
 ## 许可
 
-[MIT](./LICENSE) © 2026 Teng Dai / 懒笔头
+MIT License — 见 [LICENSE](LICENSE)。更多说明见 [NOTICE.md](NOTICE.md)。
