@@ -8,3 +8,6 @@
 *.swp
 Thumbs.db
 skills-export.tgz
+.venv/
+__pycache__/
+*.pyc
